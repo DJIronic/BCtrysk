@@ -172,8 +172,8 @@ public class LoginEncryptionUtils {
         String userLanguage = session.getLocale();
         CustomFormWindow window = new CustomFormBuilder(LanguageUtils.getPlayerLocaleString("geyser.auth.login.form.details.title", userLanguage))
                 .addComponent(new LabelComponent(LanguageUtils.getPlayerLocaleString("geyser.auth.login.form.details.desc", userLanguage)))
-                .addComponent(new InputComponent(LanguageUtils.getPlayerLocaleString("geyser.auth.login.form.details.email", userLanguage), "account@geysermc.org", ""))
-                .addComponent(new InputComponent(LanguageUtils.getPlayerLocaleString("geyser.auth.login.form.details.pass", userLanguage), "123456", ""))
+                .addComponent(new InputComponent(LanguageUtils.getPlayerLocaleString("geyser.auth.login.form.details.email", userLanguage), "mcucet@burningcube.eu", ""))
+                .addComponent(new InputComponent(LanguageUtils.getPlayerLocaleString("geyser.auth.login.form.details.pass", userLanguage), "heslo123", ""))
                 .build();
 
         session.sendForm(window, AUTH_DETAILS_FORM_ID);
